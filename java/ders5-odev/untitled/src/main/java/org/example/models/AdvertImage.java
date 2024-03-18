@@ -1,9 +1,9 @@
 package org.example.models;
 
 public class AdvertImage {
-    public AdvertImage(Long id, Long userId, Long imageId) {
+    public AdvertImage(Long id, Long advertId, Long imageId) {
         this.id = id;
-        this.userId = userId;
+        this.advertId = advertId;
         this.imageId = imageId;
     }
 
@@ -11,7 +11,7 @@ public class AdvertImage {
     }
 
     private Long id;
-    private Long userId;
+    private Long advertId;
 
     private Long imageId;
 
@@ -23,12 +23,12 @@ public class AdvertImage {
         this.id = id;
     }
 
-    public Long getUserId() {
-        return userId;
+    public Long getAdvertId() {
+        return advertId;
     }
 
-    public void setUserId(Long userId) {
-        this.userId = userId;
+    public void setAdvertId(Long advertId) {
+        this.advertId = advertId;
     }
 
     public Long getImageId() {

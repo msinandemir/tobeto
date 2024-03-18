@@ -1,19 +1,19 @@
 package org.example.models;
 
-public class Adress {
-    public Adress(Long id, String adress, Long countryId, Long cityId, String postalCode) {
+public class Address {
+    public Address(Long id, String address, Long countryId, Long cityId, String postalCode) {
         this.id = id;
-        this.adress = adress;
+        this.address = address;
         this.countryId = countryId;
         this.cityId = cityId;
         this.postalCode = postalCode;
     }
 
-    public Adress() {
+    public Address() {
     }
 
     private Long id;
-    private String adress;
+    private String address;
     private Long countryId;
     private Long cityId;
     private String postalCode;
@@ -26,12 +26,12 @@ public class Adress {
         this.id = id;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public Long getCountryId() {
