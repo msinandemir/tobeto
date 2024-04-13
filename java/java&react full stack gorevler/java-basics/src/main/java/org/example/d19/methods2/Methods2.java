@@ -5,9 +5,9 @@ public class Methods2 {
         String mesaj = "Bugün hava ço´k güzel.";
         String yeniMesaj = sehirVer();
         System.out.println(yeniMesaj);
-        int sayi = topla(5,7);
+        int sayi = topla(5, 7);
         System.out.println(sayi);
-        int toplam = topla2(2,3,4,5,6,7,8,9);
+        int toplam = topla2(2, 3, 4, 5, 6, 7, 8, 9);
         System.out.println(toplam);
     }
 
@@ -19,7 +19,6 @@ public class Methods2 {
         System.out.println("silindi");
 
     }
-
     public static void guncelle() {
         System.out.println("güncellendi");
 
@@ -29,9 +28,9 @@ public class Methods2 {
         return a + b;
     }
 
-    public static int topla2(int... sayilar){
+    public static int topla2(int... sayilar) {
         int total = 0;
-        for(int sayi: sayilar){
+        for (int sayi : sayilar) {
             total += sayi;
         }
         return total;
