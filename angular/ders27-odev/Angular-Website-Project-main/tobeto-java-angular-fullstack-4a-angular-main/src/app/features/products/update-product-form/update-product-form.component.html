@@ -1,0 +1,56 @@
+<div class="container d-flex justify-content-center align-items-center">
+    <form [formGroup]="formGroup" (submit)="onFormSubmit()" class ="d-flex 
+    flex-column justify-content-center align-items-center gap-3" >
+        <div>
+          <label>Name: </label>
+          <input type="text" formControlName="name" />
+        </div>
+        <div>
+            <label>SupplierId: </label>
+            <input type="number" formControlName="supplierId" />
+          </div>
+
+          <div>
+            <label>CategoryId: </label>
+            <input type="number" formControlName="categoryId" />
+          </div>
+
+          <div>
+            <label>QuantityPerUnit: </label>
+            <input type="number" formControlName="quantityPerUnit" />
+          </div>
+
+          <div>
+            <label>UnitPrice: </label>
+            <input type="number" formControlName="unitPrice" />
+          </div>
+
+          <div>
+            <label>UnitsInStock: </label>
+            <input type="number" formControlName="unitsInStock" />
+          </div>
+
+          <div>
+            <label>UnitsOnOrder: </label>
+            <input type="number" formControlName="unitsOnOrder" />
+          </div>
+
+          <div>
+            <label>RecorderLevel: </label>
+            <input type="number" formControlName="recorderLevel" />
+          </div>
+
+        <div>   
+          <label>Discontinued: </label>
+          <label for="true">True</label>
+          <input id="true" value="true" type="radio" formControlName="discontinued"/>
+          <label for="false">False</label>
+          <input id="false" value="false" type="radio" formControlName="discontinued"/>
+        </div>
+
+      <div class="d-flex gap-3">
+        <button type="submit" class="btn btn-primary">Update</button>
+      </div>
+      </form>
+      
+    </div>

@@ -1,0 +1,15 @@
+<ul class="list-group">
+  @for (item of items; track $index) {
+  <li
+    class="list-group-item list-group-item-action n-list-group-item"
+    [ngClass]="{
+      'activated': isSelectedItem(item.id),
+    }"
+    (click)="onListGroupItemClick(item)"
+  >
+    <h6>{{ item.label }}</h6>
+    <p>{{ item.description }}</p>
+    <a [routerLink]="[ '/categories/management/update/'+item.id]" class="btn btn-outline-dark">Update</a>
+  </li>
+  }
+</ul>
