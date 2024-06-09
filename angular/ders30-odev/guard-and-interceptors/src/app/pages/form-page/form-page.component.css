@@ -1,0 +1,30 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    > input, textarea{
+        color: whitesmoke;
+        border-radius: 10px;
+        border: white 1px solid;
+        padding: 10px;
+    }
+
+    > button{
+        color: white;
+        border-radius: 10px;
+        width: 120px;
+        height: 40px;
+        cursor: pointer;
+        transition: all .3ms ease-in;
+        &:hover{
+            opacity: .7;
+        }
+    }
+
+}
+
